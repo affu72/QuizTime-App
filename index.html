@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Test Time</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Quiz App</h1>
+  </header>
+  <section class="section-hero">
+    <h3>Customise Your test: Choose your topic, Number of questions and level of test</h3>
+    <form action="" class="quiz">
+      <label for="">Topic</label>
+      <select name="select-topic" id="topic" class="topic-option">
+        <option value="Arts&Literature" class="option-1">Arts & Literature</option>
+        <option value="Film&TV" class="option-2">Films & TV</option>
+        <option value="Food&Drink" class="option-3">Food & Drink</option>
+        <option value="General Knowledge" class="option-4">General Knowledge</option>
+        <option value="History" class="option-5">History</option>
+        <option value="Music" class="option-5">Music</option>
+        <option value="Science" class="option-5">Science</option>
+      </select>
+
+      <label for="">Number of questions</label>
+      <select name="" id="number" class="topic-option">
+        <option value="10" class="option1">10</option>
+        <option value="15" class="option2">15</option>
+        <option value="20" class="option3">20</option>
+      </select>
+
+      <label for="">Difficulty Level</label>
+      <select name="" id="level" class="topic-option">
+        <option value="easy" class="option1">Easy</option>
+        <option value="medium" class="option2">Medium</option>
+        <option value="hard" class="option3">Hard</option>
+      </select>
+      <input type="submit" class="subBtn" value="start your test">
+
+    </form>
+
+  </section>
+
+  <section class="questions hidden">
+    <div class="btns hidden">
+      <input type="button" value="previous" class="previous-btn">
+      <input type="button" value="next" class="next-btn">
+      <input type="submit" class="submit-result hidden">
+    </div>
+
+
+  </section>
+
+  <section class="score hidden">
+    <h3>Congratulation, You have Completed your test</h3>
+
+
+  </section>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

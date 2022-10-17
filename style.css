@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.header h1 {
+  margin-left: 3rem;
+}
+
+label {
+  margin: 0;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+h3 {
+  font-size: 3.2rem;
+  margin-bottom: 6.4rem;
+}
+
+.section-hero {
+  margin: 4rem auto;
+  padding: 2.4rem 9.6rem;
+  /* border: 2px solid red; */
+  /* text-align: center; */
+  background-color: #ebfbee;
+}
+
+.quiz {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.topic-option {
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.subBtn {
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  grid-column: 1/-1;
+  width: 30rem;
+  align-items: center;
+  justify-self: center;
+  margin-left: 10rem;
+  /* background-color: #a5d8ff; */
+  background-color: #37b24d;
+  border: none;
+  color: white;
+  padding: 1.5rem 3.5rem;
+}
+
+.question-container {
+  min-height: 33rem;
+  /* border: 2px solid #ffd700; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4.8rem;
+  /* margin: 20rem; */
+
+  background-color: #ebfbee;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  position: relative;
+
+  /* border: 2px solid green; */
+  padding: 9.6rem;
+
+  background-color: #ffffff;
+}
+
+.question-title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  grid: 2rem;
+}
+
+.option input {
+  /* width: 4rem; */
+  transform: scale(1.2);
+  margin-right: 6px;
+}
+
+.question-active {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.question-options {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.btns input {
+  display: inline-block;
+  padding: 1.5rem 3.5rem;
+  width: 18rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  background-color: #37b24d;
+}
+
+.btns {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  display: flex;
+  gap: 30rem;
+  justify-content: space-around;
+  color: white;
+}
+
+.previous-btn {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.score {
+  margin-top: 10rem;
+  text-align: center;
+}
+.result-description {
+  margin: 0 auto;
+  font-size: 2.2rem;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 3rem;
+}
+
+.visited {
+  position: absolute;
+  bottom: 3rem;
+  left: 4rem;
+  font-size: 2.2rem;
+}
