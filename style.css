@@ -16,6 +16,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .header h1 {
   margin-left: 3rem;
 }
