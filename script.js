@@ -49,7 +49,6 @@ const createQuestion = function (data) {
   let options;
 
   data.forEach((ele, questCount) => {
-    if (ele.type === "Multiple Choice") {
       const incorrect = ele.incorrectAnswers;
       const crct = ele.correctAnswer;
       const option = incorrect.splice(0, Math.floor(Math.random() * 3) + 1);
@@ -103,11 +102,9 @@ const createQuestion = function (data) {
     <div class="visited">${questCount + 1}/${data.length}</div>
     <div>`;
       questArr.push(html);
-    }
   });
 
   const displaResult = function (ans) {
-    console.log(ans);
     let score = 0;
     let wrong = 0;
     let skip = 0;
