@@ -29,7 +29,7 @@ submitBtn.addEventListener("click", function (e) {
 
   request.addEventListener("load", function () {
     const data = JSON.parse(this.responseText);
-
+    console.log(data);
     btns.classList.remove("hidden");
     quizDes.classList.add("hidden");
     prevBtn.classList.add("hidden");
@@ -141,7 +141,7 @@ const createQuestion = function (data) {
 
   const displayPrevious = function () {
     count--;
-
+    console.log(count);
     if (count <= 1) {
       prevBtn.classList.add("hidden");
     }
@@ -188,9 +188,9 @@ const createQuestion = function (data) {
         .classList.remove("hidden");
     }
 
-    if (count === 1) {
-      prevBtn.classList.remove("hidden");
-    }
+    // if (count === 1) {
+    //   prevBtn.classList.remove("hidden");
+    // }
 
     count++;
 
