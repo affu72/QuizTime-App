@@ -188,9 +188,12 @@ const createQuestion = function (data) {
         .classList.remove("hidden");
     }
 
-    // if (count === 1) {
-    //   prevBtn.classList.remove("hidden");
-    // }
+    if (count === 0) {
+      prevBtn.classList.add("hidden");
+    }
+    else{
+      prevBtn.classList.remove("hidden");
+    }
 
     count++;
 
